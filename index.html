@@ -44,54 +44,112 @@
       </nav>
     </header>
     <main>
-      <section class="banner-section text-white text-center">
+      <section class="banner-section text-white text-center mb-24">
         <div
           class="relative px-24 py-36 banner bg-[url(/Images/group.png)] bg-no-repeat rounded-2xl bg-cover bg-center max-w-6xl min-h-[500px] pb-6"
         >
           <div
-            class="absolute inset-0 rounded-2xl bg-gradient-to-b from-black/70 to-black/20"
+            class="absolute z-0 inset-0 rounded-2xl bg-gradient-to-b from-black/70 to-black/20"
           ></div>
-          <h1 class="font-extrabold text-6xl mb-6">Explore Your Travel</h1>
-          <p class="text-xl leading-6 mb-12">
-            Dolor sit amet consectetur. Nullam suspendisse vitae ultricies dolor
-            adipiscing. In et odio enim ac quis sapien urna eu phasellus.
-          </p>
-          <div
-            class="text-black bg-[#ffffff50] p-4 max-w-3xl mx-auto rounded-xl"
-          >
-            <input
-              class="p-3 bg-white rounded-xl"
-              type="text"
-              placeholder="Where Go"
-            />
-            <select
-              class="border-0 bg-white rounded-lg px-4 ml-6 py-2"
-              name="when"
-              id=""
+          <div class="z-10 relative">
+            <h1 class="font-extrabold text-6xl mb-6">Explore Your Travel</h1>
+            <p class="text-xl leading-6 mb-12">
+              Dolor sit amet consectetur. Nullam suspendisse vitae ultricies
+              dolor adipiscing. In et odio enim ac quis sapien urna eu
+              phasellus.
+            </p>
+            <div
+              class="text-black bg-[#ffffff50] p-4 max-w-3xl mx-auto rounded-xl"
             >
-              <option value="" selected disabled>When</option>
-              <option value="">America</option>
-              <option value="">Sweden</option>
-              <option value="">Brazil</option>
-              <option value="">Europe</option>
-            </select>
-            <select
-              class="bg-white border-0 ml-6 rounded-lg px-4 py-2"
-              name="select-type"
-              id=""
-            >
-              <option value="" selected disabled>Select Type</option>
-              <option value="">Chair Coach</option>
-              <option value="">Normal</option>
-              <option value="">Sleeper</option>
-              <option value="">Elite</option>
-            </select>
-            <button
-              class="rounded-xl ml-6 bg-primary py-3 px-4 cursor-pointer hover:bg-amber-700 text-white"
-            >
-              <i class="fa-solid fa-magnifying-glass"></i> Find Now
-            </button>
+              <input
+                class="p-3 bg-white rounded-xl"
+                type="text"
+                placeholder="Where Go"
+              />
+              <select
+                class="border-0 bg-white rounded-lg px-4 ml-6 py-2"
+                name="when"
+                id=""
+              >
+                <option value="" selected disabled>When</option>
+                <option value="">America</option>
+                <option value="">Sweden</option>
+                <option value="">Brazil</option>
+                <option value="">Europe</option>
+              </select>
+              <select
+                class="bg-white border-0 ml-6 rounded-lg px-4 py-2"
+                name="select-type"
+                id=""
+              >
+                <option value="" selected disabled>Select Type</option>
+                <option value="">Chair Coach</option>
+                <option value="">Normal</option>
+                <option value="">Sleeper</option>
+                <option value="">Elite</option>
+              </select>
+              <button
+                class="rounded-xl ml-6 bg-primary py-3 px-4 cursor-pointer hover:bg-amber-700 text-white"
+              >
+                <i class="fa-solid fa-magnifying-glass"></i> Find Now
+              </button>
+            </div>
           </div>
+        </div>
+      </section>
+      <section class="popular-section flex gap-12 mb-24">
+        <div class="popular-content max-w-[577px]">
+          <h2 class="font-extrabold text-2xl mb-6">Our Popular Tours</h2>
+          <p class="text-black/70 leading-7">
+            Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra
+            odio sit massa. Sodales dictumst nec nibh pellentesque.
+          </p>
+          <ul class="list-disc pl-8 text-black/70 my-6">
+            <li class="mb-4">
+              Tempus euismod lacus mauris dignissim quis in ultrices. Magna
+              nullam odio neque diam. Sociis erat at .
+            </li>
+            <li class="mb-4">
+              Adipiscing ornare pellentesque mauris volutpat tortor vitae platea
+              porta lacus. Lectus suspendisse nullam.
+            </li>
+            <li class="mb-4">
+              Accumsan eget et turpis praesent lorem egestas enim elit bibendum.
+              Risus at in.
+            </li>
+          </ul>
+          <p class="text-[#5A5A5D] leading-7 mb-8">
+            Amet consectetur. Vulputate commodo felis molestie risus ornare
+            nulla amet et. Libero commodo sagittis dignissim adipiscing quis.
+            Habitant adipiscing risus natoque aliquet. Id bibendum nunc senectus
+            semper tincidunt.
+          </p>
+          <button
+            class="rounded-xl bg-primary py-3 px-6 cursor-pointer hover:bg-amber-700 text-white"
+          >
+            Read More
+          </button>
+        </div>
+        <div class="popular-image">
+          <img src="./Images/mountain.png" />
+        </div>
+      </section>
+      <section class="choose-section text-center">
+        <h2 class="font-extrabold text-2xl mb-6 text-center">
+          Our Popular Tours
+        </h2>
+        <p class="text-black/70 leading-7 max-w-2xl mx-auto mb-12">
+          Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra
+          odio sit massa. Sodales dictumst nec nibh pellentesque.
+        </p>
+        <div class="countries grid grid-cols-12 grid-rows-3 gap-6">
+          <img class="col-span-6" src="./Images/maldiv.png" alt="" />
+          <img class="col-span-6" src="./Images/indonesia.png" alt="" />
+          <img class="col-span-4" src="./Images/srilanka.png" alt="" />
+          <img class="col-span-5" src="./Images/north.png" alt="" />
+          <img class="col-span-3" src="./Images/kasmir.png" alt="" />
+          <img class="col-span-5" src="./Images/bangladesh.png" alt="" />
+          <img class="col-span-7" src="./Images/bandarban.png" alt="" />
         </div>
       </section>
     </main>
