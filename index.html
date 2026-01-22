@@ -5,8 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Video-practice-6</title>
     <link href="./src/output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
-  <body class="max-w-4/5 mx-auto">
+  <body class="max-w-4/5 mx-auto font-mulish">
     <header>
       <nav class="flex items-center justify-between my-12">
         <div class="logo flex justify-center items-center">
@@ -36,5 +43,57 @@
         </ul>
       </nav>
     </header>
+    <main>
+      <section class="banner-section text-white text-center">
+        <div
+          class="relative px-24 py-36 banner bg-[url(/Images/group.png)] bg-no-repeat rounded-2xl bg-cover bg-center max-w-6xl min-h-[500px] pb-6"
+        >
+          <div
+            class="absolute inset-0 rounded-2xl bg-gradient-to-b from-black/70 to-black/20"
+          ></div>
+          <h1 class="font-extrabold text-6xl mb-6">Explore Your Travel</h1>
+          <p class="text-xl leading-6 mb-12">
+            Dolor sit amet consectetur. Nullam suspendisse vitae ultricies dolor
+            adipiscing. In et odio enim ac quis sapien urna eu phasellus.
+          </p>
+          <div
+            class="text-black bg-[#ffffff50] p-4 max-w-3xl mx-auto rounded-xl"
+          >
+            <input
+              class="p-3 bg-white rounded-xl"
+              type="text"
+              placeholder="Where Go"
+            />
+            <select
+              class="border-0 bg-white rounded-lg px-4 ml-6 py-2"
+              name="when"
+              id=""
+            >
+              <option value="" selected disabled>When</option>
+              <option value="">America</option>
+              <option value="">Sweden</option>
+              <option value="">Brazil</option>
+              <option value="">Europe</option>
+            </select>
+            <select
+              class="bg-white border-0 ml-6 rounded-lg px-4 py-2"
+              name="select-type"
+              id=""
+            >
+              <option value="" selected disabled>Select Type</option>
+              <option value="">Chair Coach</option>
+              <option value="">Normal</option>
+              <option value="">Sleeper</option>
+              <option value="">Elite</option>
+            </select>
+            <button
+              class="rounded-xl ml-6 bg-primary py-3 px-4 cursor-pointer hover:bg-amber-700 text-white"
+            >
+              <i class="fa-solid fa-magnifying-glass"></i> Find Now
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
